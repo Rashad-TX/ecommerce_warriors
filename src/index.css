@@ -1,3 +1,21 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-shadow: border;
+}
+
+.myNav{
+  margin-left: 20rem;
+  font-size: 1.2rem;
+}
+
+.cart-li{
+  margin-left: 2rem;
+  padding-top: 0.5rem;
+}
+
+
+
 .banner-container{
   display: flex;
   align-items: center;
@@ -23,4 +41,55 @@ padding: 0.5rem;
 
 .discount-code{
   color: yellow;
+}
+
+/*HERO*/
+.bgimage {
+  width:100%;
+  height:625px;
+  background: url('./assets/images/hero.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
+  background-attachment: fixed;
+}
+.bgimage h5 {
+  color:white;
+  text-shadow:2px 2px #333;
+  font-size: 3rem;
+}
+
+.hero-sec{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:30rem;
+}
+
+.hero-btn{
+  background-color: #0039C1;
+  color: white;
+  font-size: 1.4rem;
+  padding: 1rem;
+  border-radius: 10px;
+  border: solid 1px yellow;
+}
+/*EndOf Hero*/
+
+
+.footer-cnt{
+    background-color: lightgray;
+}
+
+.footer-hdr{
+  font-size: 1rem;
+  font-weight: bolder
+}
+
+.footer-btn{
+  width: 300px;
+font: 1.1rem;
+background-color: #0039C1;
+color:white;
+padding: 5px;
 }
