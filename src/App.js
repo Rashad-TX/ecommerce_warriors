@@ -7,17 +7,18 @@ import JerseyBanner from "./JerseyBanner";
 import ShopBy from "./ShopBy";
 import FooterNav from "./FooterNav";
 import Countdown from "./Countdown";
+import Products from "./Products";
 
 function App() {
   return (
     <div className="App">
 <Navigation/> 
-<SaleBanner/>   
+<SaleBanner/>
 <Hero/>
 <Featured/>
 <JerseyBanner/>
 <ShopBy/>
-<Countdown/> 
+ <Products/>
 <FooterNav/>
 
     </div>

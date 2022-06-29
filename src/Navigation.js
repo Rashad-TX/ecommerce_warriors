@@ -25,19 +25,16 @@ class Navigation extends Component{
           <a className="nav-link active" aria-current="page" href="#">Home</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">Men</a>
+          <a className="nav-link" href="#">Apparel</a>
         </li>
-        <li className="nav-item">
-          <a className="nav-link" href="#">Women</a>
-        </li>
-        <li className="nav-item">
+               <li className="nav-item">
           <a className="nav-link" href="#">Hats</a>
         </li>
         <li className="nav-item">
           <a className="nav-link" href="#">Accessories</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">Collectibles</a>
+          <a className="nav-link" href="#">Collectables</a>
         </li>
         <li className="nav-item">
           <a className="nav-link" href="#">New Arrivals</a>

@@ -4,6 +4,7 @@
   box-shadow: border;
 }
 
+
 .myNav{
   margin-left: 20rem;
   font-size: 1.2rem;
@@ -92,4 +93,32 @@ font: 1.1rem;
 background-color: #0039C1;
 color:white;
 padding: 5px;
+}
+
+.countdown-timer{
+  
+  max-width: 10rem;
+
+
+}
+
+.countdown-text{
+  font-family: 'Wallpoet', cursive;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+margin-top: 2rem;
+}
+
+.countdown-time{
+  font-family: 'Wallpoet', cursive;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 1rem;
+  
+
 }
