@@ -1,7 +1,6 @@
 import React,{Component} from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import logo from "./assets/images/logo.png";
-import {fontawesome} from "@fortawesome/fontawesome-free";
 import{faShoppingCart} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -25,7 +24,13 @@ class Navigation extends Component{
           <a className="nav-link active" aria-current="page" href="#">Home</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">Apparel</a>
+          <a className="nav-link" href="#">Men</a>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link" href="#">Women</a>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link" href="#">Jerseys</a>
         </li>
                <li className="nav-item">
           <a className="nav-link" href="#">Hats</a>

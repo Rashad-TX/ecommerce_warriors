@@ -96,29 +96,88 @@ padding: 5px;
 }
 
 .countdown-timer{
-  
-  max-width: 10rem;
-
-
+    max-width: 10rem;
 }
 
 .countdown-text{
-  font-family: 'Wallpoet', cursive;
+font-family: 'Wallpoet', cursive;
 display: flex;
 justify-content: center;
 align-items: center;
 text-align: center;
-margin-top: 2rem;
+
 }
 
 .countdown-time{
   font-family: 'Wallpoet', cursive;
-  font-size: 2rem;
+  font-size: 1.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  margin-bottom: 1rem;
+  margin: -1rem; 
+ 
+
   
 
 }
+
+.prod-cntr{
+  text-align: center;
+}
+
+
+.card:hover{
+
+transform: scale(1.1);
+}
+
+.card-body{
+  width: 20rem;
+  height: 10rem;
+}
+
+
+
+.card-title{
+  font-size: 1.3rem;
+  font-weight: bolder;
+}
+
+.prod-price{
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+
+.prod-carticon{
+  font-size: 1.5rem;
+  padding-left: 5rem;
+  cursor: pointer;
+}
+
+.prod-row{
+  padding-top: 2rem;
+ 
+}
+
+.prod-col{
+  padding-bottom: 3rem;
+}
+
+.main-btn{
+  background-color: #0039C1;
+  color: yellow;
+  width: 8rem;
+  border: solid yellow;
+  padding: 1.5rem;
+}
+
+.mainbtn-menu-container{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  justify-content: space-evenly;
+  background-color: lightgray;
+  padding: 2rem;
+}
+

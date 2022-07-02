@@ -42,10 +42,10 @@ class Countdown extends Component{
     return (
         <>
         <div className="countdown-timer">
-            <div className = "countdown-text">
-        <p>Hrs: Min: Sec:</p>
-            </div>
-            <div className="countdown-time">
+        <div className = "countdown-text">
+          <p>DEAL ENDS<br></br> Hrs: Min: Sec:</p>
+        </div>
+        <div className="countdown-time">
         <p>{this.state.hours}:{this.state.minutes}:{this.state.seconds} </p>
             </div>
         </div>

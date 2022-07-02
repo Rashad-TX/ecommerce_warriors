@@ -6,8 +6,7 @@ import Featured from "./Featured";
 import JerseyBanner from "./JerseyBanner";
 import ShopBy from "./ShopBy";
 import FooterNav from "./FooterNav";
-import Countdown from "./Countdown";
-import Products from "./Products";
+import ButtonMenu from "./ButtonMenu";
 
 function App() {
   return (
@@ -18,7 +17,7 @@ function App() {
 <Featured/>
 <JerseyBanner/>
 <ShopBy/>
- <Products/>
+<ButtonMenu/>
 <FooterNav/>
 
     </div>
