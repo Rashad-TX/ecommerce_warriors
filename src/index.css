@@ -181,3 +181,12 @@ transform: scale(1.1);
   padding: 2rem;
 }
 
+.plus, .minus{
+  width:2rem;
+  height: 1rem;
+}
+
+.quantity-container{
+  display: flex;
+  justify-content: center;
+}

@@ -1,10 +1,9 @@
 import React, {Component} from "react";  
 import Products from "./Products";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {faCartPlus} from "@fortawesome/free-solid-svg-icons";
 
 
-const  ProductList =[
+
+export const  ProductList =[
     {
         id:0,
         category:"accessories",

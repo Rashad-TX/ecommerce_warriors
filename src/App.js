@@ -7,6 +7,7 @@ import JerseyBanner from "./JerseyBanner";
 import ShopBy from "./ShopBy";
 import FooterNav from "./FooterNav";
 import ButtonMenu from "./ButtonMenu";
+import Cart from "./Cart";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
 <ShopBy/>
 <ButtonMenu/>
 <FooterNav/>
+<Cart/>
 
     </div>
   );
