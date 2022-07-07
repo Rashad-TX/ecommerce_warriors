@@ -435,8 +435,9 @@ class ButtonMenu extends Component {
         <>
           <div className="mainbtn-menu-container">
             
-            {CATEGORIES.map((item) => (
+            {CATEGORIES.map((item, index) => (
               <button
+              key={index}
                 className="main-btn"
                 onClick={() => this.getCategory(item.toLowerCase())}
                 value={item.toLowerCase()}
@@ -446,7 +447,7 @@ class ButtonMenu extends Component {
             ))}
             </div>
 
-            <Products products={this.state.products} />
+            <Products products={this.state.products} updateCart={this.props.updateCart} />
          
         </>
       );

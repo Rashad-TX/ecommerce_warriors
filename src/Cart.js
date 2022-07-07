@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import plus from "./assets/images/plus.svg";
 import minus from "./assets/images/minus.svg";
-import Products from "./Products";
+
 
 class Cart extends Component{
     constructor(props){
@@ -9,16 +9,33 @@ class Cart extends Component{
 
 this.state = {
     totalItems: 0,
-    totalPrice: 0
+    amount:0,
+    taxes: 0,
+    totalAmount: 0
 }
         
     }
-    render(){
+
+    removeItemFromCart = (id) => {
+      const filteredItem = this.props.cartItems.filter(item => item.id !== id)
+      localStorage.setItem("cart", JSON.stringify(filteredItem))
+      this.props.removeFromCart(id)
+      console.log(id)
+      console.log(filteredItem)
+    }
     
-const cartItems = JSON.parse( localStorage.getItem('cart'));
-const totalItems = cartItems.length;
-const amount = cartItems.reduce((accumulator, object) => {
-    return accumulator + object.price;},0);
+        
+    
+    
+    
+    render(){
+
+
+// const cartItems = JSON.parse( localStorage.getItem('cart'));
+const cartItems = this.props.cartItems;
+const totalItems = cartItems?.length || 0;
+const amount = cartItems?.reduce((accumulator, object) => {
+    return accumulator + object.price;},0) ||0;
 const taxes = (amount * 0.065);
  const totalAmount = amount + taxes;
 
@@ -47,8 +64,9 @@ return(<>
                   <p className="card-text">{element.description}</p>
                   <div className = "quantity-container">
                   <img src={minus} className ="minus"/> <p className ="quantity" >QUANTITIY:<span className="qnty-txt"></span></p> <img src={plus} className ="plus"/> 
+                  <button onClick={() => this.removeItemFromCart(element.id)}>Remove From Cart</button> 
                  </div>
-                 <button onClick={localStorage.removeItem("cart")}>Remove From Cart</button> 
+                 
                 </div>
               </div>
             </div>
