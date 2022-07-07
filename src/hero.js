@@ -10,7 +10,7 @@ class Hero extends Component {
     <div className="row">
       <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 
-        <p><a href="#"><button className ="hero-btn">SHOP NOW</button></a></p>
+        <p><a href="products"><button className ="hero-btn">SHOP NOW</button></a></p>
       </div>
     </div>
   </div>

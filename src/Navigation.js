@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import logo from "./assets/images/logo.png";
 import{faShoppingCart} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {Link} from 'react-router-dom'
 
 
 class Navigation extends Component{
@@ -21,31 +22,31 @@ class Navigation extends Component{
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="nav justify-content-center myNav " >
         <li className="nav-item">
-          <a className="nav-link active" aria-current="page" href="#">Home</a>
+          <Link className="nav-link active" aria-current="page" to="/">Home</Link>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">Men</a>
+        <Link className="nav-link active" aria-current="page" to="/men">Men</Link>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">Women</a>
+          <a className="nav-link" href="/women">Women</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">Jerseys</a>
+          <a className="nav-link" href="/jersey">Jerseys</a>
         </li>
                <li className="nav-item">
-          <a className="nav-link" href="#">Hats</a>
+          <a className="nav-link" href="/hat">Hats</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">Accessories</a>
+          <a className="nav-link" href="/accessories">Accessories</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">Collectables</a>
+          <a className="nav-link" href="/collectable">Collectables</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">New Arrivals</a>
+          <a className="nav-link" href="/new">New Arrivals</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">Top Produts</a>
+          <a className="nav-link" href="/top">Top Produts</a>
         </li>
             
       <form className="d-flex">
@@ -53,7 +54,7 @@ class Navigation extends Component{
         <button className="btn btn-outline-success" type="submit">Search</button>
       </form>
       <li className= "cart-li">
-        <a className= "cart-link" href="#"> <FontAwesomeIcon icon={faShoppingCart}/></a>
+        <a className= "cart-link" href="/cart"> <FontAwesomeIcon icon={faShoppingCart}/></a>
        </li>
        </ul>
     </div>

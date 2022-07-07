@@ -1,13 +1,13 @@
 import React,{Component} from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faCartPlus} from "@fortawesome/free-solid-svg-icons";
-import Cart from "./Cart";
+
 
 
 let items = [];
 
 class Products extends Component {
-constructor(props, context) {
+constructor(props) {
  super(props)
  this.state={
  }
@@ -16,6 +16,8 @@ constructor(props, context) {
 componentDidMount() {
     items = [];
 }
+
+
 
 addToCart=(item)=>{
   items.push(item);

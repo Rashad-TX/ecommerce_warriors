@@ -1,6 +1,6 @@
 import React, {Component} from "react";  
 import Products from "./Products";
-
+import {useLocation} from 'react-router-dom'
 
 
 export const  ProductList =[
@@ -238,7 +238,7 @@ export const  ProductList =[
 },
 {
     id:29,
-    category:"jersey",
+    category:"top",
     image:"./prod_images/uni-jersey2.jpg",
     product: "Stephen Curry Jersey",
     description: "Official Stephen Curry Jersey",
@@ -246,7 +246,7 @@ export const  ProductList =[
 },
 {
     id:30,
-    category:"jersey",
+    category:"new",
     image:"./prod_images/uni-jersey3.jpg",
     product: "Klay Thompson Jersey",
     description: "Official Klay Thompson Jersey",
@@ -407,9 +407,9 @@ export const  ProductList =[
 
 ];
 
-const CATEGORIES = ['All', 'Men', 'Women', 'Jersey', 'Shirts', 'Accessories', 'Collectable'];
+const CATEGORIES = ['All', 'Men', 'Women', 'Jersey', 'Shirts', 'Accessories', 'Collectable', 'Top Products', 'New Arrivals'];
 
-
+ 
 
 
 class ButtonMenu extends Component {
@@ -418,8 +418,10 @@ class ButtonMenu extends Component {
       this.state = {
         products: ProductList
       };
+
     }
-  
+    
+
     getCategory = (category) => {
       if (category === "all") {
         this.setState({ products: ProductList });
@@ -430,20 +432,38 @@ class ButtonMenu extends Component {
         }
       }
     };
+
+    componentDidMount(){
+    //    console.log(this.props.path)
+        const path = this.props.path
+      //  const filter = ProductList.filter((d) => d.category === path);
+      //  if (filter) {
+      //    this.setState({ products: filter });
+       // }
+       if (path === "all") {
+        this.setState({ products: ProductList });
+      } else {
+        const filter = ProductList.filter((d) => d.category === path);
+        if (filter) {
+          this.setState({ products: filter });
+        }
+      }
+    }
+
     render() {
       return (
         <>
           <div className="mainbtn-menu-container">
             
             {CATEGORIES.map((item, index) => (
-              <button
+                 <button
               key={index}
                 className="main-btn"
-                onClick={() => this.getCategory(item.toLowerCase())}
+                onClick={() => { this.getCategory(item.toLowerCase()) } }
                 value={item.toLowerCase()}
               >
-                {item}
-              </button>
+               {item} 
+              </button> 
             ))}
             </div>
 

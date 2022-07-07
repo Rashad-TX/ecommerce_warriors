@@ -169,7 +169,7 @@ transform: scale(1.1);
   color: yellow;
   width: 8rem;
   border: solid yellow;
-  padding: 1.5rem;
+  padding:0.5rem;
 }
 
 .mainbtn-menu-container{
@@ -189,4 +189,42 @@ transform: scale(1.1);
 .quantity-container{
   display: flex;
   justify-content: center;
+}
+
+.cart-hdr{
+text-align: center;
+}
+
+.cart-totals{
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+margin-right: 2rem;
+justify-content: right; 
+
+
+
+}
+
+.checkout-btn{
+  width: 10rem;
+
+ 
+}
+
+.bold-totals{
+  font-weight: bold;
+
+}
+
+.trash-icon{
+  width: 1.3rem;
+  padding-bottom: 0.2rem;
+  padding-left: 
+}
+
+.rmv-btn{
+  width: 10rem;
+  font-size: 1.1rem;
+  height: 2.4rem;
 }

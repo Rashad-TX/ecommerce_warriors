@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-import plus from "./assets/images/plus.svg";
-import minus from "./assets/images/minus.svg";
+import trash from  "./assets/images/trash.svg";
 
 
 class Cart extends Component{
@@ -20,9 +19,7 @@ this.state = {
       const filteredItem = this.props.cartItems.filter(item => item.id !== id)
       localStorage.setItem("cart", JSON.stringify(filteredItem))
       this.props.removeFromCart(id)
-      console.log(id)
-      console.log(filteredItem)
-    }
+        }
     
         
     
@@ -38,22 +35,27 @@ const amount = cartItems?.reduce((accumulator, object) => {
     return accumulator + object.price;},0) ||0;
 const taxes = (amount * 0.065);
  const totalAmount = amount + taxes;
+ const rounded = totalAmount.toFixed(2);
 
 return(<>
 <div>
-<h2>YOUR CART</h2>
-<p>Total Items <span>{totalItems} </span></p>
-<p>Amount <span>{amount}</span></p>
-<p>Total Taxes <span>{taxes}</span></p>
-<p>Total Amount <span>{totalAmount}</span></p>
+<h2 className ="cart-hdr">YOUR CART</h2>
+<div className = "cart-totals">
 
-<p>Check Out</p>
+<p>Total Items: <span >{totalItems} </span></p>
+<p>Amount: <span>${amount}</span></p>
+<p>Total Taxes:  <span >${taxes}</span></p>
+<p className="bold-totals">Total Amount:  <span className="bold-totals">${rounded}</span></p>
+<button className=" checkout-btn align-self-end">Check Out</button>
+</div>
+
+
 </div>
       <div className="container prod-cntr">
         <div className="row prod-row">
           {cartItems?.map((element) => (
             <div className="col-lg-3 prod-col" key={element.id}>
-              <div className="card card-container">
+              <div className="card-container">
                 <img
                   src={element.image}
                   alt="product img"
@@ -62,10 +64,11 @@ return(<>
                 <div className="card-body">
                   <p className="card-title">{element.product}</p>
                   <p className="card-text">{element.description}</p>
-                  <div className = "quantity-container">
-                  <img src={minus} className ="minus"/> <p className ="quantity" >QUANTITIY:<span className="qnty-txt"></span></p> <img src={plus} className ="plus"/> 
-                  <button onClick={() => this.removeItemFromCart(element.id)}>Remove From Cart</button> 
-                 </div>
+                  <p className="card-text">{element.price}</p>
+                 <div className = "rmv-btn-container">
+                  <button onClick={() => this.removeItemFromCart(element.id)} className="rmv-btn">Remove <img src={trash} className ="trash-icon"/></button> 
+                  </div>
+                 
                  
                 </div>
               </div>
