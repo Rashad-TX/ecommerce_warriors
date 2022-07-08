@@ -25,28 +25,28 @@ class Navigation extends Component{
           <Link className="nav-link active" aria-current="page" to="/">Home</Link>
         </li>
         <li className="nav-item">
-        <Link className="nav-link active" aria-current="page" to="/men">Men</Link>
+        <Link className="nav-link " aria-current="page" to="/men">Men</Link>
         </li>
         <li className="nav-item">
-        <Link className="nav-link active" aria-current="page" to="/women">Women</Link>
+        <Link className="nav-link " aria-current="page" to="/women">Women</Link>
         </li>
         <li className="nav-item">
-        <Link className="nav-link active" aria-current="page" to="/jersey">Jerseys</Link>
+        <Link className="nav-link " aria-current="page" to="/jersey">Jerseys</Link>
         </li>
                <li className="nav-item">
-               <Link className="nav-link active" aria-current="page" to="/hat">Hats</Link>
+               <Link className="nav-link " aria-current="page" to="/hat">Hats</Link>
         </li>
         <li className="nav-item">
-        <Link className="nav-link active" aria-current="page" to="/accessories">Accessories</Link>
+        <Link className="nav-link " aria-current="page" to="/accessories">Accessories</Link>
         </li>
         <li className="nav-item">
-        <Link className="nav-link active" aria-current="page" to="/collectable">Collectables</Link>
+        <Link className="nav-link " aria-current="page" to="/collectable">Collectables</Link>
         </li>
         <li className="nav-item">
-        <Link className="nav-link active" aria-current="page" to="/new">New Arrivals</Link>
+        <Link className="nav-link " aria-current="page" to="/new-arrivals">New Arrivals</Link>
         </li>
         <li className="nav-item">
-        <Link className="nav-link active" aria-current="page" to="/top">Top Products</Link>
+        <Link className="nav-link " aria-current="page" to="/top-products">Top Products</Link>
         </li>
             
       <form className="d-flex">

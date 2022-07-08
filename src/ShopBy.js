@@ -3,27 +3,31 @@ import sbcurry from "./assets/images/sbcurry.png";
 import sbklay from "./assets/images/sbklay.png";
 import sbdray from "./assets/images/sbdray.png";
 import sbjp from "./assets/images/sbjp.png";
+import {Link} from 'react-router-dom';
+import Products from "./Products";
 
 class ShopBy extends Component{
     render(){
+
         return(
             <>
 <div className="container-fluid">
     <div className = "row ">
         <div className = "col-lg-3" >
-        <a><img src = {sbcurry} alt="steph photo"/></a>
+        <Link to="/curry" ><img src = {sbcurry} alt="steph photo"/> </Link>
         </div>
         <div className = "col-lg-3">
-        <a><img src = {sbklay} alt="klay photo" /></a>
+        <Link to="/klay"><img src = {sbklay} alt="klay photo" /></Link>
         </div>
         <div className = "col-lg-3">
-        <a><img src = {sbjp} alt="jordan photo" /></a>
+        <Link to="/poole"><img src = {sbjp} alt="jordan photo" /></Link>
         </div>
         <div className = "col-lg-3">
-        <a><img src = {sbdray} alt="dray photo" /></a>
+        <Link to="/draymond"><img src = {sbdray} alt="dray photo" /></Link>
         </div>
     </div>
 </div>
+
             </>
         )
     }

@@ -1,13 +1,7 @@
 import React from "react";
 import Navigation from "./Navigation";
-import SaleBanner from "./SaleBanner";
-import Hero from "./hero";
-import Featured from "./Featured";
-import JerseyBanner from "./JerseyBanner";
-import ShopBy from "./ShopBy";
 import FooterNav from "./FooterNav";
 import ButtonMenu from "./ButtonMenu";
-import Products from "./Products";
 import Home from "./Home"
 import Cart from "./Cart";
 import {BrowserRouter as Router, Route, Routes, Switch} from 'react-router-dom';
@@ -36,9 +30,13 @@ class App extends React.Component {
   <Route path="/hat" element={ <ButtonMenu updateCart={this.updateCart} path={'hats'}/>} />
   <Route path="/accessories" element={ <ButtonMenu updateCart={this.updateCart} path={'accessories'}/>} />
   <Route path="/collectable" element={ <ButtonMenu updateCart={this.updateCart} path={'collectable'}/>} />
-  <Route path="/new" element={ <ButtonMenu updateCart={this.updateCart} path={'new'}/>} />
-  <Route path="/top" element={ <ButtonMenu updateCart={this.updateCart} path={'top'}/>} />
+  <Route path="/new-arrivals" element={ <ButtonMenu updateCart={this.updateCart} path={'new-arrivals'}/>} />
+  <Route path="/top-products" element={ <ButtonMenu updateCart={this.updateCart} path={'top-products'}/>} />
   <Route path="/products" element={ <ButtonMenu updateCart={this.updateCart} path={'all'}/>} />
+  <Route path="/curry" element={ <ButtonMenu updateCart={this.updateCart} path={'curry'}/>} />
+  <Route path="/klay" element={ <ButtonMenu updateCart={this.updateCart} path={'klay'}/>} />
+  <Route path="/poole" element={ <ButtonMenu updateCart={this.updateCart} path={'poole'}/>} />
+  <Route path="/draymond" element={ <ButtonMenu updateCart={this.updateCart} path={'draymond'}/>} />
   <Route path="/cart"  element={<Cart cartItems={this.state.cart} removeFromCart={this.removeFromCart}/>}/>
   </Routes>
       <FooterNav/>

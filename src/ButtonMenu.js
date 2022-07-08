@@ -405,63 +405,63 @@ export const  ProductList =[
 },
 {
     id:50,
-    category:"top",
+    category:"top-products",
     image:"./prod_images/top1.png",
     product: "Steph Curry Shirt",
     description: "Official Steph Curry Shirt",
     price: 29.99
 },{
     id:51,
-    category:"top",
+    category:"top-products",
     image:"./prod_images/top2.png",
     product: "Jordan Poole Shirt",
     description: "Official Jordan Poole Shirt",
     price: 29.99
 },{
     id:52,
-    category:"top",
+    category:"top-products",
     image:"./prod_images/top3.png",
     product: "Warriors Shirt",
     description: "Official Warriors Shirt",
     price: 29.99
 },{
     id:53,
-    category:"top",
+    category:"top-products",
     image:"./prod_images/top4.png",
     product: "NBA Jams Shirt",
     description: "Official NBA Jam Shirt",
     price: 29.99
 },{
     id:54,
-    category:"top",
+    category:"top-products",
     image:"./prod_images/top5.png",
     product: "Warriors Paddle",
     description: "Ping Pong Paddle",
     price: 29.99
 },{
     id:56,
-    category:"new",
+    category:"new-arrivals",
     image:"./prod_images/new1.png",
     product: "Warriors Shirt",
     description: "Official Warriors Shirt",
     price: 29.99
 },{
     id:57,
-    category:"new",
+    category:"new-arrivals",
     image:"./prod_images/new2.png",
     product: "Warriors Shirt",
     description: "Official Warriors Shirt",
     price: 29.99
 },{
     id:58,
-    category:"new",
+    category:"new-arrivals",
     image:"./prod_images/new3.png",
     product: "Warriors Shirt",
     description: "Official Warriors Shirt",
     price: 29.99
 },{
     id:59,
-    category:"new",
+    category:"new-arrivals",
     image:"./prod_images/new4.png",
     product: "Warriors Shirt",
     description: "Official Warriors Shirt",
@@ -469,16 +469,120 @@ export const  ProductList =[
 },
 {
     id:60,
-    category:"new",
+    category:"new-arrivals",
     image:"./prod_images/new5.png",
     product: "Warriors Shirt",
     description: "Official Warriors Shirt",
     price: 29.99
-}
+},
+{
+    id:61,
+    category:"curry",
+    image:"./prod_images/curry1.jpg",
+    product: "Curry Hoodie",
+    description: "Official Curry Hoodie",
+    price: 1000
+},
+{
+    id:62,
+    category:"curry",
+    image:"./prod_images/curry2.jpg",
+    product: "Curry Shorts",
+    description: "Official Curry Shorts",
+    price: 1000
+},
+{
+    id:63,
+    category:"curry",
+    image:"./prod_images/curry3.jpg",
+    product: "Curry Jersey",
+    description: "Steph Curry Jersey",
+    price: 1000
+},
+{
+    id:64,
+    category:"curry",
+    image:"./prod_images/curry4.jpg",
+    product: "Curry Long Sleeve T",
+    description: "Curry Long Sleeve T",
+    price: 1000
+},
+{
+    id:64,
+    category:"curry",
+    image:"./prod_images/curry5.jpg",
+    product: "Curry Hoodie",
+    description: "Official Curry Hoodie",
+    price: 1000
+},
+{
+    id:64,
+    category:"curry",
+    image:"./prod_images/curry6.jpg",
+    product: "Signed Curry Picture",
+    description: "Framed Picture",
+    price: 1000
+},
+{
+    id:64,
+    category:"curry",
+    image:"./prod_images/curry7.jpg",
+    product: "Curry Coozie",
+    description: "Curry Coozie",
+    price: 1000
+},
+{
+    id:64,
+    category:"curry",
+    image:"./prod_images/curry8.jpg",
+    product: "Curry ALL Star MVP",
+    description: "Curry MVP Plaque",
+    price: 1000
+},
+{
+    id:64,
+    category:"curry",
+    image:"./prod_images/curry9.jpg",
+    product: "Curry Shirt",
+    description: "Official Curry Shirt",
+    price: 1000
+},
+{
+    id:64,
+    category:"curry",
+    image:"./prod_images/curry10.jpg",
+    product: "Curry Onesie",
+    description: "Official Curry Onesie",
+    price: 1000
+},
+{
+    id:64,
+    category:"draymond",
+    image:"./prod_images/new5.png",
+    product: "test curry",
+    description: "test draymond",
+    price: 1000
+},
+{
+    id:64,
+    category:"draymond",
+    image:"./prod_images/new5.png",
+    product: "test curry",
+    description: "test draymond",
+    price: 1000
+},
+{
+    id:64,
+    category:"draymond",
+    image:"./prod_images/new5.png",
+    product: "test curry",
+    description: "test draymond",
+    price: 1000
+},
 
 ];
 
-const CATEGORIES = ['All', 'Men', 'Women', 'Jersey', "Hats",'Shirts', 'Accessories', 'Collectable', 'Top Products', 'New Arrivals'];
+const CATEGORIES = ['All', 'Men', 'Women', 'Jersey', "Hats",'Shirts', 'Accessories', 'Collectable', 'Top-Products', 'New-Arrivals'];
 
  
 
@@ -507,11 +611,7 @@ class ButtonMenu extends Component {
     componentDidMount(){
    
         const path = this.props.path
-      //  const filter = ProductList.filter((d) => d.category === path);
-      //  if (filter) {
-      //    this.setState({ products: filter });
-       // }
-       if (path === "all") {
+        if (path === "all") {
         this.setState({ products: ProductList });
       } else {
         const filter = ProductList.filter((d) => d.category === path);

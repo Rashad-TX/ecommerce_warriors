@@ -34,6 +34,7 @@ const totalItems = cartItems?.length || 0;
 const amount = cartItems?.reduce((accumulator, object) => {
     return accumulator + object.price;},0) ||0;
 const taxes = (amount * 0.065);
+const rndTaxes = taxes.toFixed(2);
  const totalAmount = amount + taxes;
  const rounded = totalAmount.toFixed(2);
 
@@ -44,7 +45,7 @@ return(<>
 
 <p>Total Items: <span >{totalItems} </span></p>
 <p>Amount: <span>${amount}</span></p>
-<p>Total Taxes:  <span >${taxes}</span></p>
+<p>Total Taxes:  <span >${rndTaxes}</span></p>
 <p className="bold-totals">Total Amount:  <span className="bold-totals">${rounded}</span></p>
 <button className=" checkout-btn align-self-end">Check Out</button>
 </div>

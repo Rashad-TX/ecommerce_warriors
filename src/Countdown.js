@@ -4,7 +4,6 @@ class Countdown extends Component{
     constructor(props){
         super(props);
             this.state={
-            days:"00",
             hours:"00",
             minutes:"00",
             seconds:"00"
@@ -15,29 +14,21 @@ class Countdown extends Component{
             let countDownDate = new Date();
              countDownDate.setHours(24,0,0,0);
            
-            let myfunc = setInterval(
+             setInterval(
                 function () {
                   let now = new Date().getTime();
                   let timeleft = countDownDate - now;
                   this.setState({
-                    days: Math.floor(timeleft / (1000 * 60 * 60 * 24)),
-                    hours: Math.floor(
-                      (timeleft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-                    ),
+                    hours: Math.floor((timeleft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
                     minutes: Math.floor((timeleft % (1000 * 60 * 60)) / (1000 * 60)),
                     seconds: Math.floor((timeleft % (1000 * 60)) / 1000)
                   });
                 }.bind(this), // we added the binding here
                 1000
               );
-
-
-
-
-
+          
         }
-
-    
+   
          render(){    
     return (
         <>
@@ -46,7 +37,19 @@ class Countdown extends Component{
           <p>DEAL ENDS<br></br> Hrs: Min: Sec:</p>
         </div>
         <div className="countdown-time">
-        <p>{this.state.hours}:{this.state.minutes}:{this.state.seconds} </p>
+        <p>
+              {this.state.hours < 10
+                ? "0" + this.state.hours
+                : this.state.hours}
+              :
+              {this.state.minutes < 10
+                ? "0" + this.state.minutes
+                : this.state.minutes}
+              :
+              {this.state.seconds < 10
+                ? "0" + this.state.seconds
+                : this.state.seconds}{" "}
+            </p>
             </div>
         </div>
         </>
