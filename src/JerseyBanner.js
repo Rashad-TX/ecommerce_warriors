@@ -1,6 +1,6 @@
 import React,{Component} from "react";
 import jersBanner from "./assets/images/jersbanner.png";
-
+import {Link} from 'react-router-dom'
 
 class JerseyBanner extends Component{
     render(){
@@ -9,7 +9,7 @@ class JerseyBanner extends Component{
 <div className = "container-fluid">
 <div className = "row">
 <div className = "col">
-   <a href="#"> <img src = {jersBanner} alt="various-jerseys" className="jersey-banner" width="100%" height="300px"></img></a>
+   <Link to="/jersey"> <img src = {jersBanner} alt="various-jerseys" className="jersey-banner" width="100%" height="300px"></img></Link>
 </div>
 </div>
 </div>

@@ -13,7 +13,7 @@ class Countdown extends Component{
 
         componentDidMount(){
             let countDownDate = new Date();
-             countDownDate.setDate(countDownDate.getDate()+1);
+             countDownDate.setHours(24,0,0,0);
            
             let myfunc = setInterval(
                 function () {

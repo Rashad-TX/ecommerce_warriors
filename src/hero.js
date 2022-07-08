@@ -1,5 +1,5 @@
 import React,{Component} from "react";
-
+import {Link} from 'react-router-dom'
 
 class Hero extends Component {
     render(){
@@ -10,7 +10,7 @@ class Hero extends Component {
     <div className="row">
       <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 
-        <p><a href="products"><button className ="hero-btn">SHOP NOW</button></a></p>
+        <p><Link to="/products"><button className ="hero-btn">SHOP NOW</button></Link></p>
       </div>
     </div>
   </div>

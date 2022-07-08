@@ -28,25 +28,25 @@ class Navigation extends Component{
         <Link className="nav-link active" aria-current="page" to="/men">Men</Link>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="/women">Women</a>
+        <Link className="nav-link active" aria-current="page" to="/women">Women</Link>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="/jersey">Jerseys</a>
+        <Link className="nav-link active" aria-current="page" to="/jersey">Jerseys</Link>
         </li>
                <li className="nav-item">
-          <a className="nav-link" href="/hat">Hats</a>
+               <Link className="nav-link active" aria-current="page" to="/hat">Hats</Link>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="/accessories">Accessories</a>
+        <Link className="nav-link active" aria-current="page" to="/accessories">Accessories</Link>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="/collectable">Collectables</a>
+        <Link className="nav-link active" aria-current="page" to="/collectable">Collectables</Link>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="/new">New Arrivals</a>
+        <Link className="nav-link active" aria-current="page" to="/new">New Arrivals</Link>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="/top">Top Produts</a>
+        <Link className="nav-link active" aria-current="page" to="/top">Top Products</Link>
         </li>
             
       <form className="d-flex">
@@ -54,7 +54,7 @@ class Navigation extends Component{
         <button className="btn btn-outline-success" type="submit">Search</button>
       </form>
       <li className= "cart-li">
-        <a className= "cart-link" href="/cart"> <FontAwesomeIcon icon={faShoppingCart}/></a>
+        <Link className= "cart-link" to="/cart"> <FontAwesomeIcon icon={faShoppingCart}/></Link>
        </li>
        </ul>
     </div>

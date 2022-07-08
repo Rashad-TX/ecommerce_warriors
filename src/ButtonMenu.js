@@ -1,6 +1,5 @@
 import React, {Component} from "react";  
 import Products from "./Products";
-import {useLocation} from 'react-router-dom'
 
 
 export const  ProductList =[
@@ -238,7 +237,7 @@ export const  ProductList =[
 },
 {
     id:29,
-    category:"top",
+    category:"jersey",
     image:"./prod_images/uni-jersey2.jpg",
     product: "Stephen Curry Jersey",
     description: "Official Stephen Curry Jersey",
@@ -246,7 +245,7 @@ export const  ProductList =[
 },
 {
     id:30,
-    category:"new",
+    category:"jersey",
     image:"./prod_images/uni-jersey3.jpg",
     product: "Klay Thompson Jersey",
     description: "Official Klay Thompson Jersey",
@@ -403,11 +402,83 @@ export const  ProductList =[
     product: "Steph Curry Shirt",
     description: "Official Steph Curry Shirt",
     price: 29.99
+},
+{
+    id:50,
+    category:"top",
+    image:"./prod_images/top1.png",
+    product: "Steph Curry Shirt",
+    description: "Official Steph Curry Shirt",
+    price: 29.99
+},{
+    id:51,
+    category:"top",
+    image:"./prod_images/top2.png",
+    product: "Jordan Poole Shirt",
+    description: "Official Jordan Poole Shirt",
+    price: 29.99
+},{
+    id:52,
+    category:"top",
+    image:"./prod_images/top3.png",
+    product: "Warriors Shirt",
+    description: "Official Warriors Shirt",
+    price: 29.99
+},{
+    id:53,
+    category:"top",
+    image:"./prod_images/top4.png",
+    product: "NBA Jams Shirt",
+    description: "Official NBA Jam Shirt",
+    price: 29.99
+},{
+    id:54,
+    category:"top",
+    image:"./prod_images/top5.png",
+    product: "Warriors Paddle",
+    description: "Ping Pong Paddle",
+    price: 29.99
+},{
+    id:56,
+    category:"new",
+    image:"./prod_images/new1.png",
+    product: "Warriors Shirt",
+    description: "Official Warriors Shirt",
+    price: 29.99
+},{
+    id:57,
+    category:"new",
+    image:"./prod_images/new2.png",
+    product: "Warriors Shirt",
+    description: "Official Warriors Shirt",
+    price: 29.99
+},{
+    id:58,
+    category:"new",
+    image:"./prod_images/new3.png",
+    product: "Warriors Shirt",
+    description: "Official Warriors Shirt",
+    price: 29.99
+},{
+    id:59,
+    category:"new",
+    image:"./prod_images/new4.png",
+    product: "Warriors Shirt",
+    description: "Official Warriors Shirt",
+    price: 29.99
+},
+{
+    id:60,
+    category:"new",
+    image:"./prod_images/new5.png",
+    product: "Warriors Shirt",
+    description: "Official Warriors Shirt",
+    price: 29.99
 }
 
 ];
 
-const CATEGORIES = ['All', 'Men', 'Women', 'Jersey', 'Shirts', 'Accessories', 'Collectable', 'Top Products', 'New Arrivals'];
+const CATEGORIES = ['All', 'Men', 'Women', 'Jersey', "Hats",'Shirts', 'Accessories', 'Collectable', 'Top Products', 'New Arrivals'];
 
  
 
@@ -434,7 +505,7 @@ class ButtonMenu extends Component {
     };
 
     componentDidMount(){
-    //    console.log(this.props.path)
+   
         const path = this.props.path
       //  const filter = ProductList.filter((d) => d.category === path);
       //  if (filter) {

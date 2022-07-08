@@ -28,14 +28,7 @@ class App extends React.Component {
     <div className="App">
     <Router>
       <Navigation/> 
-
-     {/* <Route path="/hero" element={<Hero />}/> */}
-
-
-
-      {/* <ButtonMenu updateCart={this.updateCart}/> */}
- 
- <Routes>
+  <Routes>
   <Route path="/" element={<Home />} />
   <Route path="/men" element={ <ButtonMenu updateCart={this.updateCart} path={'men'}/>} />
   <Route path="/women" element={ <ButtonMenu updateCart={this.updateCart} path={'women'}/>} />
@@ -47,13 +40,9 @@ class App extends React.Component {
   <Route path="/top" element={ <ButtonMenu updateCart={this.updateCart} path={'top'}/>} />
   <Route path="/products" element={ <ButtonMenu updateCart={this.updateCart} path={'all'}/>} />
   <Route path="/cart"  element={<Cart cartItems={this.state.cart} removeFromCart={this.removeFromCart}/>}/>
-  
-  
-
- </Routes>
+  </Routes>
       <FooterNav/>
-      
-    </Router>
+  </Router>
     </div>
     )
   }
