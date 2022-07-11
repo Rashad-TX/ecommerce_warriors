@@ -481,7 +481,7 @@ export const  ProductList =[
     image:"./prod_images/curry1.jpg",
     product: "Curry Hoodie",
     description: "Official Curry Hoodie",
-    price: 1000
+    price: 39.99
 },
 {
     id:62,
@@ -489,7 +489,7 @@ export const  ProductList =[
     image:"./prod_images/curry2.jpg",
     product: "Curry Shorts",
     description: "Official Curry Shorts",
-    price: 1000
+    price: 39.99
 },
 {
     id:63,
@@ -497,7 +497,7 @@ export const  ProductList =[
     image:"./prod_images/curry3.jpg",
     product: "Curry Jersey",
     description: "Steph Curry Jersey",
-    price: 1000
+    price:49.99
 },
 {
     id:64,
@@ -505,79 +505,167 @@ export const  ProductList =[
     image:"./prod_images/curry4.jpg",
     product: "Curry Long Sleeve T",
     description: "Curry Long Sleeve T",
-    price: 1000
+    price: 19.99
 },
 {
-    id:64,
+    id:65,
     category:"curry",
     image:"./prod_images/curry5.jpg",
     product: "Curry Hoodie",
     description: "Official Curry Hoodie",
-    price: 1000
+    price: 25.99
 },
 {
-    id:64,
+    id:66,
     category:"curry",
     image:"./prod_images/curry6.jpg",
     product: "Signed Curry Picture",
     description: "Framed Picture",
-    price: 1000
+    price: 49.99
 },
 {
-    id:64,
+    id:67,
     category:"curry",
     image:"./prod_images/curry7.jpg",
     product: "Curry Coozie",
     description: "Curry Coozie",
-    price: 1000
+    price: 9.99
 },
 {
-    id:64,
+    id:68,
     category:"curry",
     image:"./prod_images/curry8.jpg",
     product: "Curry ALL Star MVP",
     description: "Curry MVP Plaque",
-    price: 1000
+    price: 69.99
 },
 {
-    id:64,
+    id:69,
     category:"curry",
     image:"./prod_images/curry9.jpg",
     product: "Curry Shirt",
     description: "Official Curry Shirt",
-    price: 1000
+    price: 29.99
 },
 {
-    id:64,
+    id:70,
     category:"curry",
     image:"./prod_images/curry10.jpg",
     product: "Curry Onesie",
     description: "Official Curry Onesie",
-    price: 1000
+    price: 19.99
 },
 {
-    id:64,
-    category:"draymond",
-    image:"./prod_images/new5.png",
-    product: "test curry",
-    description: "test draymond",
-    price: 1000
+    id:71,
+    category:"klay",
+    image:"./prod_images/klay1.jpg",
+    product: "Klay Jersey",
+    description: "Offical Klay Jersey",
+    price: 49.99
 },
 {
-    id:64,
-    category:"draymond",
-    image:"./prod_images/new5.png",
-    product: "test curry",
-    description: "test draymond",
-    price: 1000
+    id:72,
+    category:"klay",
+    image:"./prod_images/klay2.jpg",
+    product: "Klay Shorts",
+    description: "Official Klay Shorts",
+    price: 49.99
 },
 {
-    id:64,
+    id:73,
+    category:"klay",
+    image:"./prod_images/klay3.jpg",
+    product: "Klay Shirt",
+    description: "Official Klay Shirt",
+    price: 39.99
+},
+{
+    id:74,
+    category:"klay",
+    image:"./prod_images/klay4.jpg",
+    product: "Klay Hoodie",
+    description: "Official Klay Hoodie",
+    price: 39.99
+},
+{
+    id:75,
+    category:"klay",
+    image:"./prod_images/klay5.jpg",
+    product: "Klay Hoodie",
+    description: "Official Klay Hoodie",
+    price: 49.99
+},
+{
+    id:76,
+    category:"klay",
+    image:"./prod_images/klay6.jpg",
+    product: "Autographed Ball",
+    description: "Klay Basketball",
+    price: 99.99
+},
+{
+    id:77,
+    category:"poole",
+    image:"./prod_images/poole1.jpg",
+    product: "Poole Shirt",
+    description: "Official Poole Shirt",
+    price: 39.99
+},
+{
+    id:78,
+    category:"poole",
+    image:"./prod_images/poole2.jpg",
+    product: "Poole Jacket",
+    description: "Poole Jacket",
+    price: 74.99
+},
+{
+    id:79,
+    category:"poole",
+    image:"./prod_images/poole3.jpg",
+    product: "Poole Shirt",
+    description: "Official Poole Shirt",
+    price: 19.99
+},
+{
+    id:80,
+    category:"poole",
+    image:"./prod_images/poole4.jpg",
+    product: "Poole Jersey",
+    description: "Official Poole Jersey",
+    price: 59.99
+},
+{
+    id:81,
+    category:"poole",
+    image:"./prod_images/poole5.jpg",
+    product: "Poole Coat",
+    description: "Jordan Poole Coat",
+    price: 99.99
+},
+{
+    id:82,
     category:"draymond",
-    image:"./prod_images/new5.png",
-    product: "test curry",
-    description: "test draymond",
-    price: 1000
+    image:"./prod_images/dray1.jpg",
+    product: "Draymond Shirt",
+    description: "Official Draymond Shirt",
+    price: 19.99
+},
+{
+    id:83,
+    category:"draymond",
+    image:"./prod_images/dray2.jpg",
+    product: "Draymond Shirt",
+    description: "Official Draymond Shirt",
+    price: 19.99
+},
+{
+    id:84,
+    category:"draymond",
+    image:"./prod_images/dray3.jpg",
+    product: "Draymond Shirt",
+    description: "Official Draymond Shirt",
+    price: 19.99
 },
 
 ];
@@ -586,13 +674,15 @@ const CATEGORIES = ['All', 'Men', 'Women', 'Jersey', "Hats",'Shirts', 'Accessori
 
  
 
-
 class ButtonMenu extends Component {
     constructor(props) {
       super(props);
       this.state = {
-        products: ProductList
+        products: ProductList,
+        
       };
+
+     
 
     }
     

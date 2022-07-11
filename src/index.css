@@ -4,18 +4,21 @@
   box-shadow: border;
 }
 
-
 .myNav{
-  margin-left: 20rem;
   font-size: 1.2rem;
+   width: 90%
 }
 
-.cart-li{
-  margin-left: 2rem;
-  padding-top: 0.5rem;
+.cart-cntr{
+display: flex;
+justify-content: flex-end;
+padding-right: 2rem;
+padding-top: 1rem;
 }
 
-
+.nav-cart{
+  font-size: 1.5rem;
+}
 
 .banner-container{
   display: flex;
@@ -25,9 +28,12 @@
   width: 100%;
   height: 5rem;
   color: white;
-
 }
 
+.banner-link{
+  text-decoration: none;
+  color: white;
+}
 
 
 .banner-disc{
@@ -78,8 +84,10 @@ padding: 0.5rem;
 /*EndOf Hero*/
 
 
+
 .footer-cnt{
     background-color: lightgray;
+    padding-top: 2rem;
 }
 
 .footer-hdr{
@@ -115,10 +123,6 @@ text-align: center;
   justify-content: center;
   align-items: center;
   margin: -1rem; 
- 
-
-  
-
 }
 
 .prod-cntr{
@@ -127,7 +131,6 @@ text-align: center;
 
 
 .card:hover{
-
 transform: scale(1.1);
 }
 
@@ -203,26 +206,19 @@ text-align: center;
   text-align: right;
 margin-right: 2rem;
 justify-content: right; 
-
-
-
 }
 
 .checkout-btn{
   width: 10rem;
-
- 
 }
 
 .bold-totals{
   font-weight: bold;
-
 }
 
 .trash-icon{
   width: 1.3rem;
   padding-bottom: 0.2rem;
-
 }
 
 .rmv-btn{
@@ -232,12 +228,64 @@ justify-content: right;
 }
 
 .cart-hdr{
-  color:#0039C1;
-  background-color: yellow;
-  border:#0039C1 solid;
+  color:yellow;
+  background-color: #0039C1;
+  border:yellow solid;
 }
 
 .checkout-btn{
   background-color: #0039C1;
   color: yellow;
+}
+
+.navbar-toggler-icon{
+  border:solid yellow;
+  background-color:#0039C1
+}
+
+.form-hdr{
+  text-align: center;
+}
+
+.response-cntr{
+
+  width:100%;
+  height: 10rem;
+}
+
+.response-text{
+  color:#0039C1
+}
+
+.myform{
+  display:flex;
+  justify-content: center;
+}
+.response-cntr{
+  text-align: center;
+}
+.abt-hdr-cntr{
+  text-align: center;
+}
+.FAQ-hdr{
+  text-align: center;
+}
+
+.reg-form{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: left;
+  width: 450px;
+  margin: auto;
+  background: #ffffff;
+  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+  padding: 40px 55px 45px 55px;
+  border-radius: 15px;
+  transition: all .3s;
+
+}
+
+.reg-form-hdr{
+  text-align: center;
 }

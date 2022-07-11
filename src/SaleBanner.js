@@ -1,5 +1,6 @@
 import React, {Component} from "react";
 import Countdown from "./Countdown";
+import {Link} from "react-router-dom";
 
 class SaleBanner extends Component{
 

@@ -1,4 +1,5 @@
 import React,{Component} from "react";
+import {Link} from 'react-router-dom';
 
 class FooterNav extends Component{
     render(){
@@ -9,21 +10,21 @@ class FooterNav extends Component{
     <div className="row">
         <div className="col-lg-3">
         <p className ="footer-hdr">Customer Service</p>
-        <p>FAQ</p>
-        <p>Size Chart</p>
+        <Link to="/contactus"><p>FAQ</p></Link>
+        <Link to="/contactus"><p>Contact Us</p></Link>
     </div>
     <div className="col-lg-3">
         <p className ="footer-hdr">Worry Free Shopping</p>
-        <p>Shipping Rates</p>
-        <p>Return Policy</p>
+        <Link to="/contactus"><p>Shipping Rates</p></Link>
+        <Link to="/contactus"><p>Return Policy</p></Link>
     </div>
     <div className="col-lg-3">
         <p className ="footer-hdr">Information</p>
-        <p>About Us</p>
+        <Link to="/aboutus"><p>About Us</p></Link>
         </div>
         <div className="col-lg-3">
         <p>Stay updated on sales and new products!</p>
-        <button className ="footer-btn">SIGN UP & SAVE 25%</button>
+        <Link to="/signup"><button className ="footer-btn">SIGN UP & SAVE 25%</button></Link>
         
         </div>
     </div>

@@ -4,7 +4,11 @@ import FooterNav from "./FooterNav";
 import ButtonMenu from "./ButtonMenu";
 import Home from "./Home"
 import Cart from "./Cart";
-import {BrowserRouter as Router, Route, Routes, Switch} from 'react-router-dom';
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+import Track from "./Track";
+import About from "./About";
+import Contact from "./Contact";
+import Signup from "./Signup";
 
 class App extends React.Component {
   state= {
@@ -38,6 +42,10 @@ class App extends React.Component {
   <Route path="/poole" element={ <ButtonMenu updateCart={this.updateCart} path={'poole'}/>} />
   <Route path="/draymond" element={ <ButtonMenu updateCart={this.updateCart} path={'draymond'}/>} />
   <Route path="/cart"  element={<Cart cartItems={this.state.cart} removeFromCart={this.removeFromCart}/>}/>
+ <Route path="/track" element={<Track/>}/>
+ <Route path="/aboutus" element={<About/>}/>
+ <Route path="/contactus" element={<Contact/>}/>
+ <Route path = "/signup" element={<Signup/>}/>
   </Routes>
       <FooterNav/>
   </Router>
