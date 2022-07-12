@@ -27,12 +27,14 @@ this.state = {
     
     render(){
 
-
+      localStorage.setItem("totalItems",0);
 // const cartItems = JSON.parse( localStorage.getItem('cart'));
 const cartItems = this.props.cartItems;
 const totalItems = cartItems?.length || 0;
+localStorage.setItem("totalItems",totalItems);
 const amount = cartItems?.reduce((accumulator, object) => {
     return accumulator + object.price;},0) ||0;
+const rndIntAmt = amount.toFixed(2);
 const taxes = (amount * 0.065);
 const rndTaxes = taxes.toFixed(2);
  const totalAmount = amount + taxes;
@@ -44,7 +46,7 @@ return(<>
 <div className = "cart-totals">
 
 <p>Total Items: <span >{totalItems} </span></p>
-<p>Amount: <span>${amount}</span></p>
+<p>Amount: <span>${rndIntAmt}</span></p>
 <p>Total Taxes:  <span >${rndTaxes}</span></p>
 <p className="bold-totals">Total Amount:  <span className="bold-totals">${rounded}</span></p>
 <button className=" checkout-btn align-self-end">Check Out</button>

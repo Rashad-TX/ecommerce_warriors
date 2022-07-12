@@ -11,12 +11,20 @@ import Contact from "./Contact";
 import Signup from "./Signup";
 
 class App extends React.Component {
-  state= {
-    cart: []
-  }
+constructor(props){
+  super(props)
+}
+
+
+state= {
+  cart: []
+}
+
 
   updateCart = (cartItem) => {
+    console.log('cartItems', cartItem);
     this.setState({cart: [...this.state.cart, cartItem]})
+    console.log('cart',this.state.cart);
   }
   removeFromCart = (id) => {
     this.setState({cart: this.state.cart.filter(i => i.id !== id)})
@@ -25,7 +33,7 @@ class App extends React.Component {
     return (
     <div className="App">
     <Router>
-      <Navigation/> 
+      <Navigation updateCart={this.state.cart.length}/> 
   <Routes>
   <Route path="/" element={<Home />} />
   <Route path="/men" element={ <ButtonMenu updateCart={this.updateCart} path={'men'}/>} />

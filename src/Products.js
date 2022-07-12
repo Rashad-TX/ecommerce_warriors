@@ -21,8 +21,6 @@ componentDidMount() {
 
 addToCart=(item)=>{
   items.push(item);
-  console.log(items)
-
   this.props.updateCart(item)
   localStorage.setItem('cart',JSON.stringify(items))
 

@@ -6,18 +6,31 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {Link} from 'react-router-dom'
 import "jquery/dist/jquery" 
 import "bootstrap/dist/js/bootstrap";
+import Cart from "./Cart";
 
 
 
 class Navigation extends Component{
-    
- 
+    constructor(props){
+      super(props)
+     // this.state({totaitems:0});
+  
+         } 
+
+        componentDidMount(){
+          console.log('props', this.props);
+        }
+
+
+
   render(){
+    console.log('props', this.props);
+  const totalItems = localStorage.getItem("totalItems");
         return(<>
             
-<div>
+
 <div className="cart-cntr"> 
-        <Link className= "cart-link" to="/cart"> <FontAwesomeIcon icon={faShoppingCart} className="nav-cart"/></Link>
+        <Link className= "cart-link" to="/cart"> <FontAwesomeIcon icon={faShoppingCart} className="nav-cart"/><span className="myBadge"> { this.props.updateCart} </span></Link>
             </div>
 <nav className="navbar navbar-expand-lg  ">
   <div className="container-fluid">
@@ -48,7 +61,7 @@ class Navigation extends Component{
     </div>
   </div>
 </nav>
-</div>
+
               </>
         )
     }
