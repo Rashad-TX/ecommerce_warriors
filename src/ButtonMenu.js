@@ -15,8 +15,8 @@ export const  ProductList =[
     id:1,
     category:"accessories",
     image:"./prod_images/accessory2.jpg",
-    product: "Warriors Water Bootle",
-    description: "32oz Hydration Waterbottle",
+    product: "Water Bottle",
+    description: "32oz Warriors Waterbottle",
     price: 69.99
 },
 {
@@ -47,8 +47,8 @@ export const  ProductList =[
     id:5,
     category:"accessories",
     image:"./prod_images/accessory6.jpg",
-    product: "Warroirs Tumbler",
-    description: "Black 30oz Insulated Tumbler",
+    product: "Warriors Tumbler",
+    description: "30oz Insulated Tumbler",
     price: 74.99
 },
 {
@@ -56,31 +56,31 @@ export const  ProductList =[
     category:"accessories",
     image:"./prod_images/accessory7.jpg",
     product: "Warriors Lanyard",
-    description: "Official Golden State Warriors Lanyard",
+    description: "Official Lanyard",
     price: 12.99
 },
 {
     id:7,
     category:"accessories",
     image:"./prod_images/accessory9.jpg",
-    product: "Warroirs Cell Phone Case",
-    description: "Official  Warriors Protective Phone Case",
+    product: "Cell Phone Case",
+    description: "Warriors Phone Case",
     price: 25.99
 },
 {
     id:8,
     category:"collectable",
     image:"./prod_images/collectable.jpg",
-    product: "Kuminga Basketball Card",
-    description: "Authentic Kuminga Basketball Card",
+    product: "Kuminga Card",
+    description: "Kuminga Basketball Card",
     price: 9.99
 },
 {
     id:9,
     category:"collectable",
     image:"./prod_images/collectable2.jpg",
-    product: "Stephen Curry Action Figure",
-    description: "Official Stephen Curry Action Figure",
+    product: "Step Curry Figure",
+    description: "Curry Action Figure",
     price: 9.99
 },
 {
@@ -88,7 +88,7 @@ export const  ProductList =[
     category:"collectable",
     image:"./prod_images/collectable3.jpg",
     product: "Curry Socks",
-    description: "Official Stephen Curry Socks",
+    description: "Official Curry Socks",
     price: 24.99
 },
 {
@@ -96,7 +96,7 @@ export const  ProductList =[
     category:"collectable",
     image:"./prod_images/collectable4.jpg",
     product: "Klay Socks",
-    description: "Official Klay Thompson Socks",
+    description: "Official Klay Socks",
     price: 24.99
 },
 {
@@ -128,7 +128,7 @@ export const  ProductList =[
     category:"collectable",
     image:"./prod_images/collectable8.jpg",
     product: "Automotive Decoration",
-    description: "Official Warroirs Automotive Decoration",
+    description: "Official Warriors Automotive Decoration",
     price: 69.99
 },
 {
@@ -136,7 +136,7 @@ export const  ProductList =[
     category:"collectable",
     image:"./prod_images/collectable9.jpg",
     product: "Signed Warriors Plaque",
-    description: "Team Signed Plaque ",
+    description: "Team Plaque w/Authenic Signatures",
     price: 499.99
 },
 {
@@ -183,8 +183,8 @@ export const  ProductList =[
     id:22,
     category:"women",
     image:"./prod_images/womens_fleece.jpg",
-    product: "Wome's Warriors Fleece",
-    description: "Women's Warriors Fleece",
+    product: "Women's Warriors Fleece",
+    description: "Women's Warriors Logo Fleece",
     price: 12.99
 },
 {
@@ -192,7 +192,7 @@ export const  ProductList =[
     category:"women",
     image:"./prod_images/womens_jacket.jpg",
     product: "Womens Warriors Jacket",
-    description: "Official Warriors Jacket",
+    description: "Official Warriors Logo Jacket",
     price: 99.99
 },
 {
@@ -215,7 +215,7 @@ export const  ProductList =[
     id:26,
     category:"women",
     image:"./prod_images/womens_sandals.jpg",
-    product: "Women's Sandals",
+    product: "Warriors Women's Sandals",
     description: "Women's Warriors Sandals",
     price: 29.99
 },
@@ -311,8 +311,8 @@ export const  ProductList =[
     id:38,
     category:"jersey",
     image:"./prod_images/uni-jersey11.jpg",
-    product: "Otto Porter Jersey",
-    description: "Official Otto Porter Jersey",
+    product: "Otto Porter Jr Jersey",
+    description: "Official Otto Porter Jr Jersey",
     price: 99.99
 },
 {
@@ -327,8 +327,8 @@ export const  ProductList =[
     id:40,
     category:"jersey",
     image:"./prod_images/uni-jersey13.jpg",
-    product: "David Lee Jersey",
-    description: "Official David Lee Jersey",
+    product: "#1 David Lee Jersey",
+    description: "Official #1 David Lee Jersey",
     price: 99.99
 },
 {
@@ -351,48 +351,48 @@ export const  ProductList =[
     id:43,
     category:"hats",
     image:"./prod_images/uni_hat.jpg",
-    product: "Warroirs Championship Hat",
-    description: "Official Warroirs Championship Hat",
+    product: "Warriors   Championship Hat",
+    description: "Official Warriors Championship Hat",
     price: 39.99
 },
 {
     id:44,
     category:"hats",
     image:"./prod_images/uni_hat2.jpg",
-    product: "Warroirs Hat",
-    description: "Official Black Warroirs Hat",
+    product: "Warriors Hat",
+    description: "Black Warriors Hat",
     price: 39.99
 },
 {
     id:45,
     category:"hats",
     image:"./prod_images/uni_hat3.jpg",
-    product: "Warroirs Hat",
-    description: "Official Blue Warroirs Hat",
+    product: "Warriors Hat",
+    description: "Official Blue Warriors Hat",
     price: 39.99
 },
 {
     id:46,
     category:"hats",
     image:"./prod_images/uni_hat4.jpg",
-    product: "Warroirs Hat",
-    description: "Official Gray Warroirs Hat",
+    product: "Warriors Hat",
+    description: "Official Gray Warriors Hat",
     price: 39.99
 },
 {
     id:47,
     category:"shirts",
     image:"./prod_images/uni_shirt.jpg",
-    product:"Warroirs Championship Shirt",
-    description: "Warroirs Championship Shirt",
+    product:"Warriors Shirt",
+    description: "Championship Shirt",
     price: 12.99
 },
 {
     id:48,
     category:"shirts",
     image:"./prod_images/uni_shirt2.jpg",
-    product: "Warroirs Gold Blooded Shirt",
-    description: "Official Warroirs Gold Blooded Shirt",
+    product: "Warriors Shirt",
+    description: "Gold Blooded Shirt",
     price: 29.99
 },
 {
@@ -503,7 +503,7 @@ export const  ProductList =[
     id:64,
     category:"curry",
     image:"./prod_images/curry4.jpg",
-    product: "Curry Long Sleeve T",
+    product: "Curry Shirt ",
     description: "Curry Long Sleeve T",
     price: 19.99
 },
@@ -519,8 +519,8 @@ export const  ProductList =[
     id:66,
     category:"curry",
     image:"./prod_images/curry6.jpg",
-    product: "Signed Curry Picture",
-    description: "Framed Picture",
+    product: "Signed Picture",
+    description: "Framed Curry Picture",
     price: 49.99
 },
 {
@@ -535,8 +535,8 @@ export const  ProductList =[
     id:68,
     category:"curry",
     image:"./prod_images/curry8.jpg",
-    product: "Curry ALL Star MVP",
-    description: "Curry MVP Plaque",
+    product: "MVP Plaque ",
+    description: "Curry All-Star Plaque",
     price: 69.99
 },
 {
@@ -714,8 +714,9 @@ class ButtonMenu extends Component {
     render() {
       return (
         <>
-          <div className="mainbtn-menu-container">
-            
+          <div className="mainbtn-menu-container container-fluid">
+            <div className = "row">
+            <div className = "col">
             {CATEGORIES.map((item, index) => (
                  <button
               key={index}
@@ -726,6 +727,8 @@ class ButtonMenu extends Component {
                {item} 
               </button> 
             ))}
+            </div>
+            </div>
             </div>
 
             <Products products={this.state.products} updateCart={this.props.updateCart} />

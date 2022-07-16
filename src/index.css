@@ -135,30 +135,59 @@ text-align: center;
 transform: scale(1.1);
 }
 
-.card-body{
-  width: 20rem;
-  height: 10rem;
-}
 
+.card-title-cntr{
+  display:flex;
+  justify-content: center;
+ 
+}
 
 
 .card-title{
   font-size: 1.3rem;
   font-weight: bolder;
+ max-width: fit-content;
 }
+
+.card-title-cntr{
+  display: flex;
+  justify-content: center;
+  padding-top:1rem;
+}
+
+.card-text-cntr{
+  display:flex;
+justify-content: center;
+}
+
+
+.card-text{
+  max-width: fit-content;
+  
+}
+.card-price-cntr{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top:1rem;
+ 
+}
+
 
 .prod-price{
   font-size: 1.1rem;
   font-weight: 500;
+  
  
 }
 
 
 .prod-carticon{
   font-size: 1.5rem;
-  padding-left: 5rem;
-  cursor: pointer;
-  color:#0039C1
+   cursor: pointer;
+  color:#0039C1;
+  max-width: fit-content;
+
 }
 
 .prod-row{
@@ -176,6 +205,10 @@ transform: scale(1.1);
   width: 8rem;
   border: solid yellow;
   padding:0.5rem;
+}
+
+.main-btn:hover{
+text-decoration: underline;
 }
 
 .mainbtn-menu-container{
@@ -196,6 +229,8 @@ transform: scale(1.1);
   display: flex;
   justify-content: center;
 }
+
+
 
 .cart-hdr{
 text-align: center;
@@ -244,6 +279,11 @@ justify-content: right;
   background-color:#0039C1
 }
 
+.nav-link:hover{
+  text-decoration: underline;
+  text-decoration-color: #0039C1;
+}
+
 .form-hdr{
   text-align: center;
 }
@@ -255,12 +295,20 @@ justify-content: right;
 }
 
 .response-text{
-  color:#0039C1
+  color:yellow
 }
 
 .myform{
   display:flex;
   justify-content: center;
+}
+.form-hdr{
+  color: yellow;
+}
+.form-cntr{
+margin-bottom: 18rem;
+background-color: #0039C1;
+
 }
 .response-cntr{
   text-align: center;
@@ -300,3 +348,35 @@ justify-content: right;
   text-decoration: none;
 }
 
+.countdown-time{
+
+  min-width: 10rem;
+  max-width: 10rem;
+}
+
+
+@media(max-width: 700px){
+  
+  
+  .banner-disc{
+    display:none;
+  } 
+
+  .banner-text{
+    display:none;
+  }
+
+ 
+ 
+  }
+
+  @media (pointer:coarse) {
+    .card:hover {
+        -webkit-transform: none;
+        -moz-transform: none;
+        -ms-transform: none;
+        transform: none;
+    }
+    }
+
+  

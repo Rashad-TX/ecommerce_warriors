@@ -9,11 +9,11 @@ class Featured extends Component{
             <>
 <div className = "container">
 <div className = "row gx-5">
-<div className = "col-md-6">
-   <Link to="/new-arrivals"> <img src = {newpic} alt="sweater" className="newPic" width = "650px" height="650px"></img></Link>
+<div className = "col-lg-6">
+   <Link to="/new-arrivals"> <img src = {newpic} alt="sweater" className="newPic img-fluid" width = "650px" height="650px"></img></Link>
 </div>
-<div className ="col-md-6">
-<Link to="/top-products"><img src = {toppic} alt="sweater" className="topPic" width = "650px" height="650px"></img> </Link>
+<div className ="col-lg-6">
+<Link to="/top-products"><img src = {toppic} alt="sweater" className="topPic img-fluid" width = "650px" height="650px"></img> </Link>
 </div>
 </div>
 </div>

@@ -20,7 +20,7 @@ componentDidMount() {
 
 
 addToCart=(item)=>{
-  items.push(item);
+   items.push(item);
   this.props.updateCart(item)
   localStorage.setItem('cart',JSON.stringify(items))
 
@@ -33,18 +33,24 @@ render() {
     <div className="container prod-cntr">
       <div className="row prod-row">
         {this.props.products?.map((element) => (
-          <div className="col-lg-3 prod-col" key={element.id}>
+          <div className="col-lg-3 col-md-6 prod-col" key={element.id}>
             <div className="card card-container">
               <img
                 src={element.image}
                 alt="product img"
-                className="prod-img"
+                className="prod-img img-fluid"
               />
               <div className="card-body">
+              <div className="card-title-cntr">
                 <p className="card-title">{element.product}</p>
+                </div>
+                <div  className="card-text-cntr">
                 <p className="card-text">{element.description}</p>
-                <p className="prod-price">{element.price}  <FontAwesomeIcon icon={faCartPlus} className="prod-carticon" onClick={()=>{this.addToCart(element)}} /></p>
-                
+                </div>
+                <div className ="card-price-cntr">
+                <p className="prod-price">${element.price} </p> 
+                <FontAwesomeIcon icon={faCartPlus} className="prod-carticon" onClick={()=>{this.addToCart(element)}} />
+               </div>
               </div>
             </div>
           </div>

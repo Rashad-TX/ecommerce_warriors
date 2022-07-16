@@ -14,16 +14,16 @@ class ShopBy extends Component{
 <div className="container-fluid">
     <div className = "row ">
         <div className = "col-lg-3" >
-        <Link to="/curry" ><img src = {sbcurry} alt="steph photo"/> </Link>
+        <Link to="/curry" ><img src = {sbcurry} alt="steph photo" className="img-fluid"/> </Link>
+        </div>
+        <div className = " col-lg-3">
+        <Link to="/klay"><img src = {sbklay} alt="klay photo" className="img-fluid" /></Link>
+        </div>
+        <div className = " col-lg-3">
+        <Link to="/poole"><img src = {sbjp} alt="jordan photo" className="img-fluid" /></Link>
         </div>
         <div className = "col-lg-3">
-        <Link to="/klay"><img src = {sbklay} alt="klay photo" /></Link>
-        </div>
-        <div className = "col-lg-3">
-        <Link to="/poole"><img src = {sbjp} alt="jordan photo" /></Link>
-        </div>
-        <div className = "col-lg-3">
-        <Link to="/draymond"><img src = {sbdray} alt="dray photo" /></Link>
+        <Link to="/draymond"><img src = {sbdray} alt="dray photo" className="img-fluid" /></Link>
         </div>
     </div>
 </div>
